@@ -97,49 +97,49 @@ footer {
     width: 100%;
 }
 
-.flex-box{
+.text-image-box {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.flex-box .flex-text {
+.text-image-box .text {
     padding: 10px;
     font-style: italic;
 }
 
-.cikk-kuldes-box {
+.article-send-box {
     margin: 0 auto;
-    width: 300px;
+    width: 400px;
     border: 1px solid #000;
     padding: 20px 30px 20px 30px;
     border-radius: 9px;
 }
 
-.cikk-kuldes-box > h2 {
+.article-send-box > h2 {
     text-align: center;
     padding-bottom: 20px;
 }
 
-.cikk-kuldes-box > form >input,
-.cikk-kuldes-box > form >textarea{
+.article-send-box > form >input,
+.article-send-box > form >textarea {
     width: 100%;
     padding: 7px;
     font-family: inherit;
     box-sizing: border-box;
 }
 
-.cikk-kuldes-box > form label,
-.cikk-kuldes-box > form button {
+.article-send-box > form label,
+.article-send-box > form button {
     display: block;
 }
 
-.cikk-kuldes-box > form label {
+.article-send-box > form label {
     margin: 15px 0 3px 0;
     white-space: nowrap;
 }
 
-.cikk-kuldes-box > form button {
+.article-send-box > form button {
     margin: 15px auto 0 auto;
     padding: 7px 20px;
 }
