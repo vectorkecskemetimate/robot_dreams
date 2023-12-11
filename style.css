@@ -43,14 +43,17 @@ nav, footer {
 
 nav > a,
 footer > a {
-    padding: 30px 0px;
+    padding: 30px 0;
     text-decoration: none;
     color: #FFF;
     text-transform: uppercase;
     letter-spacing: 3px;
-    width: 100%;
     display: inline-block;
     transition: 0.4s;
+}
+
+nav.top > a, footer > a {
+    width: 100%;
 }
 
 nav > a:hover, footer > a:hover {
@@ -65,6 +68,7 @@ footer {
     text-align: center;
     padding: 0;
     margin: 0;
+    background: #000;
 }
 
 .base-image > img {
@@ -146,4 +150,71 @@ footer {
 
 .text-image {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+}
+
+nav.sublinks {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #FFF;
+}
+
+nav.sublinks > a {
+    padding: 30px;
+}
+
+/* Responsive */
+@media screen and (min-width: 360px) and (max-width: 600px) {
+    .container {
+        width: auto;
+        padding: 0 15px;
+    }
+
+    nav.sublinks a{
+        padding: 10px;
+        letter-spacing: 1px;
+        width: 115px;
+    }
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 500px) {
+    .article-send-box {
+        width: auto;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #000000;
+        color: #eadfdf;
+    }
+    .background-image > span {
+        color: #000000;
+    }
+
+    img, .background-image {
+        opacity: .75;
+        transition: opacity .5s ease-in-out;
+    }
+    img:hover, .background-image:hover {
+        opacity: 1;
+    }
+
+    #toplink {
+        border-bottom: 1px solid #FFF;
+    }
+
+    #footerlink {
+        border-top: 1px solid #FFF;
+    }
+
+    .article-send-box {
+        border: 1px solid #FFF;
+    }
+
+    .nav.sublinks {
+        border-bottom: 1px solid #FFF;
+    }
 }
