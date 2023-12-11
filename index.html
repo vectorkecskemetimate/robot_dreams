@@ -4,6 +4,7 @@
   <title>Lorem Ipsum</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -269,22 +270,37 @@
       <div class="article-send-box">
         <h2>Cikk küldése ismerősnek</h2>
         <form name="cikk-bekuldese-ismerosoknek">
-          <label for="nev">Név*</label>
-          <input type="text" name="nev" id="nev" placeholder="Kérem adja meg a nevet" maxlength="200" required>
+          <div class="form-group">
+            <label for="nev">Név*</label>
+            <input type="text" name="nev" id="nev"  class="form-control" placeholder="Kérem adja meg a nevet"
+                   maxlength="200" required>
+          </div>
 
-          <label for="telefon">Telszám</label>
-          <input type="tel" name="telefon" id="telefon" placeholder="Kérem adja meg a telefonszámot">
+          <div class="form-group">
+            <label for="telefon">Telszám</label>
+            <input type="tel" name="telefon" id="telefon"  class="form-control"
+                   placeholder="Kérem adja meg a telefonszámot">
+          </div>
 
-          <label for="email">E-mail*</label>
-          <input type="email" name="email" id="email" placeholder="Kérem adja meg az emailt" required>
+          <div class="form-group">
+            <label for="email">E-mail*</label>
+            <input type="email" name="email" id="email" placeholder="Kérem adja meg az emailt"  class="form-control"
+                   required>
+          </div>
 
-          <label for="kor">Kora</label>
-          <input type="number" name="kor" id="kor" min="0" max="120" placeholder="Kérem adja meg a korát">
+          <div class="form-group">
+            <label for="kor">Kora</label>
+            <input type="number" name="kor" id="kor" min="0" max="120"  class="form-control"
+                   placeholder="Kérem adja meg a korát">
+          </div>
 
-          <label for="uzenet">Üzenet</label>
-          <textarea name="uzenet" id="uzenet" rows="8" placeholder="Kérem adja meg az üzenetet"></textarea>
+          <div class="form-group">
+            <label for="uzenet">Üzenet</label>
+            <textarea name="uzenet" id="uzenet" rows="8"  class="form-control"
+                      placeholder="Kérem adja meg az üzenetet"></textarea>
+          </div>
 
-          <button type="submit">Küldés</button>
+          <button class="btn btn-primary" type="submit">Küldés</button>
         </form>
       </div>
   </div>
@@ -292,6 +308,8 @@
   <footer>
     <a id="footerlink" href="#toplink">Ugrás a lap tetejére</a>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </body>
 </html>
