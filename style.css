@@ -1,11 +1,84 @@
+
+:root {
+    /* Base theme */
+    --body-background: #fff;
+    --nav-background: #000;
+    --nav-background-hover: #5c4d4d;
+    --text-color: #000;
+    --text-light: #fff;
+    --text-style: normal;
+    --higlight1-color: #ff0000;
+    --higlight2-color: #3333ff;
+    --higlight3-color: #66ff33;
+    --btn-background: #1b1d1f;
+    --theme1-btn-background: #1b1d1f;
+
+    /* Theme 2 */
+    --theme2-body-background: #fffafa;
+    --theme2-nav-background: #e6b3b3;
+    --theme2-nav-background-hover: #5c4d4d;
+    --theme2-text: #dc3545;
+    --theme2-text-light: #fff;
+    --theme2-text-style: italic;
+    --theme2-highlight1: #dh0000;
+    --theme2-highlight2: #dh33ff;
+    --theme2-highlight3: #dhff33;
+    --theme2-btn-background: #bd7777;
+
+    /* Dark mode */
+    --dark-mode-color: #000000;
+    --dark-mode-color2: #eadfdf;
+    --dark-mode-background: #000000;
+
+}
+
+
+
+body[data-theme="theme2"] {
+    --body-background: var(--theme2-body-background);
+    --nav-background: var(--theme2-nav-background);
+    --nav-background-hover: var(--theme2-nav-background-hover);
+    --text-color: var(--theme2-text);
+    --text-light: var(--theme2-text-light);
+    --text-style: var(--theme2-text-style);
+    --higlight1-color: var(--theme2-text);
+    --higlight2-color: var(--theme2-text);
+    --higlight3-color: var(--theme2-text);
+    --btn-background: var(--theme2-btn-background);
+}
+
+.theme-selector-box{
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
+
+.theme-selector:hover {
+    opacity: 0.8;
+}
+
+#theme1 {
+    background: var(--theme1-btn-background);
+}
+
+#theme2 {
+    background: var(--theme2-btn-background);
+}
+
 body {
     font-family: Inter,Helvetica,Arial,sans-serif;
     margin: 0px;
+    background: var(--body-background);
 }
 
 h1 {
     text-align: center;
     padding: 30px 0;
+    color: var(--text-color);
+}
+
+h2 {
+    color: var(--text-color);
 }
 
 p {
@@ -13,6 +86,8 @@ p {
     padding: 0px 0px 25px 0px;
     text-align: justify;
     margin-bottom: 20px;
+    color: var(--text-color);
+    font-style: var(--text-style);
 }
 
 p > span {
@@ -25,27 +100,27 @@ p > span {
 }
 
 .higlight-1 {
-    color: #ff0000;
+    color: var(--higlight1-color);
 }
 
 .higlight-2 {
-    color: #3333ff;
+    color: var(--higlight2-color);
 }
 
 .higlight-3 {
-    color: #66ff33;
+    color: var(--higlight3-color);
 }
 
 nav, footer {
     text-align: center;
-    background-color: #000;
+    background-color: var(--nav-background);
 }
 
 nav > a,
 footer > a {
     padding: 30px 0;
     text-decoration: none;
-    color: #FFF;
+    color: var(--text-light);
     text-transform: uppercase;
     letter-spacing: 3px;
     display: inline-block;
@@ -57,7 +132,7 @@ nav.top > a, footer > a {
 }
 
 nav > a:hover, footer > a:hover {
-    background: #5c4d4d;
+    background: var(--nav-background-hover);
  }
 
 footer {
@@ -146,6 +221,7 @@ footer {
 .article-send-box > form button {
     margin: 15px auto 0 auto;
     padding: 7px 20px;
+    background: var(--btn-background);
 }
 
 .text-image {
@@ -184,14 +260,20 @@ nav.sublinks > a {
     }
 }
 
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-        background: #000000;
-        color: #eadfdf;
+        background: var(--dark-mode-background);
+        color: var(--dark-mode-color2);
     }
+
+    nav, footer {
+        background-color: var(--dark-mode-background);
+    }
+
     .background-image > span {
-        color: #000000;
+        color: var(--dark-mode-color);
     }
 
     img, .background-image {
@@ -203,18 +285,24 @@ nav.sublinks > a {
     }
 
     #toplink {
-        border-bottom: 1px solid #FFF;
+        border-bottom: 1px solid var(--text-light);
     }
 
     #footerlink {
-        border-top: 1px solid #FFF;
+        border-top: 1px solid var(--text-light);
     }
 
     .article-send-box {
-        border: 1px solid #FFF;
+        border: 1px solid var(--text-light);
     }
 
     .nav.sublinks {
-        border-bottom: 1px solid #FFF;
+        border-bottom: 1px solid var(--text-light);
+    }
+
+    body[data-theme="theme1"] p,
+    body[data-theme="theme1"] h1,
+    body[data-theme="theme1"] h2{
+        color: var(--text-light);
     }
 }
