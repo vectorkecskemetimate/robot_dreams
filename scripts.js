@@ -16,31 +16,51 @@ function showArticleReadTime(){
   document.getElementById('title').after(readingTimeDiv);
 }
 
+// Artical Author Datas
+function showArticleAuthor(){
+  fetch('https://jsonplaceholder.typicode.com/users')
+    .then((response) => response.json())
+    .then((json) => {
+
+      let user = json[Math.floor(Math.random() * json.length)];
+      let authorData = document.getElementById('author-data');
+
+      document.getElementById('author-name').textContent = user.name;
+      document.getElementById('author-email').href  = 'mailto:'+ user.email;
+      document.getElementById('author-email').textContent = user.email;
+      document.getElementById('author-tel').textContent = user.phone;
+      document.getElementById('author-company').textContent = user.company.name;
+
+      authorData.classList.remove('d-none');
+    })
+}
+
 showArticleReadTime();
+showArticleAuthor();
 
 
 // Articel content search
 document.getElementById("article-search").addEventListener("keyup", function(e) {
-  var input = this.value;
+  let input = this.value;
   clearTimeout(timeoutArticle);
   timeoutArticle = setTimeout(function () {
 
-    var regex = new RegExp(input, 'gi');
-    var article = document.getElementById('article');
+    let regex = new RegExp(input, 'gi');
+    let article = document.getElementById('article');
 
     if (!article.originalContent) article.originalContent = article.innerHTML;
 
     function highlightText(node) {
       if (node.nodeType === 3) {
-        var nodeText = node.data;
-        var replacedText = nodeText.replace(regex, '<mark>$&</mark>');
+        let nodeText = node.data;
+        let replacedText = nodeText.replace(regex, '<mark>$&</mark>');
         if (replacedText !== nodeText) {
-          var newNode = document.createElement('span');
+          let newNode = document.createElement('span');
           newNode.innerHTML = replacedText;
           node.parentNode.replaceChild(newNode, node);
         }
       } else if (node.nodeType === 1 ) {
-        for (var i = 0; i < node.childNodes.length; i++) {
+        for (let i = 0; i < node.childNodes.length; i++) {
           highlightText(node.childNodes[i]);
         }
       }

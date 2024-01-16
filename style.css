@@ -81,13 +81,17 @@ h2 {
     color: var(--text-color);
 }
 
-p {
+#article > p {
     line-height: 25px;
     padding: 0px 0px 25px 0px;
     text-align: justify;
     margin-bottom: 20px;
     color: var(--text-color);
     font-style: var(--text-style);
+}
+
+#article > p:last-child {
+    padding: 0px 0px 10px 0px;
 }
 
 .container {
@@ -188,7 +192,7 @@ footer {
 }
 
 .article-send-box {
-    margin: 0 auto;
+    margin: 50px auto;
     width: 400px;
     border: 1px solid #000;
     padding: 20px 30px 20px 30px;
@@ -243,7 +247,7 @@ nav.sublinks > a {
     margin-top: 30px;
 }
 
- .reading-time {
+.reading-time {
     font-size: 14px;
     font-style: italic;
     padding: 0px 0 30px 0;
@@ -259,6 +263,22 @@ nav.sublinks > a {
     margin-left: 10px;
     height: 37px;
 }
+
+#author-data {
+    font-style: italic;
+    text-align: center;
+}
+
+#author-data .title {
+    padding: 0 0 10px 0;
+    font-size: 18px;
+}
+
+#author-data p{
+    margin: 0;
+    font-size: 15px;
+}
+
 
 
 
@@ -328,7 +348,7 @@ nav.sublinks > a {
         border-bottom: 1px solid var(--text-light);
     }
 
-    body[data-theme="theme1"] p,
+    body[data-theme="theme1"] #article > p,
     body[data-theme="theme1"] h1,
     body[data-theme="theme1"] h2{
         color: var(--text-light);
