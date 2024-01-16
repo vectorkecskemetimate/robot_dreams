@@ -90,13 +90,13 @@ p {
     font-style: var(--text-style);
 }
 
-p > span {
-    font-weight: 600;
-}
-
 .container {
     margin: 0 auto;
     width: 70%;
+}
+
+.higlight-1, .higlight-2, .higlight-3 {
+    font-weight: 600;
 }
 
 .higlight-1 {
@@ -243,12 +243,24 @@ nav.sublinks > a {
     margin-top: 30px;
 }
 
-#article .reading-time {
+ .reading-time {
     font-size: 14px;
     font-style: italic;
     padding: 0px 0 30px 0;
     text-align: center;
 }
+
+#article mark {
+    padding: 0px;
+}
+
+
+#article-search{
+    margin-left: 10px;
+    height: 37px;
+}
+
+
 
 /* Responsive */
 @media screen and (min-width: 360px) and (max-width: 600px) {
@@ -271,6 +283,11 @@ nav.sublinks > a {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    nav.top > a {
+        padding: 60px 0 30px 0;
+    }
+}
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
