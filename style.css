@@ -29,6 +29,7 @@
     --dark-mode-color: #000000;
     --dark-mode-color2: #eadfdf;
     --dark-mode-background: #000000;
+    --dark-mode-higlight2: #c7c7ff;
 
 }
 
@@ -353,4 +354,9 @@ nav.sublinks > a {
     body[data-theme="theme1"] h2{
         color: var(--text-light);
     }
+    
+    .higlight-2 {
+        color: var(--dark-mode-higlight2);
+    }
+
 }
