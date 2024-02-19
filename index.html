@@ -19,15 +19,15 @@
 </head>
 <body data-theme="theme1">
 
-  <nav class="top" role="navigation">
+  <nav class="top">
     <a id="toplink" href="#footerlink" aria-label="Jump to the bottom of the page">Ugrás a lap aljára</a>
   </nav>
 
   <div class="base-image" role="figure">
     <img src="https://picsum.photos/2200/400" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-         loading="lazy" role="img">
+         loading="lazy" >
   </div>
-  <nav class="sublinks" role="navigation">
+  <nav class="sublinks">
     <a href="#subsipsum1" aria-label="Jump to article paragraph" >Lorem subIpsum 1</a>
     <a href="#subsipsum2" aria-label="Jump to article paragraph" >Lorem subIpsum 2</a>
     <a href="#subsipsum3" aria-label="Jump to article paragraph" >Lorem subIpsum 3</a>
@@ -38,18 +38,18 @@
 
   <div class="theme-selector-box">
     <button id="theme1" type="button" class="btn btn-secondary theme-selector" data-theme="theme1"
-            aria-label="Theme change" role="button" >Theme 1</button>
+            aria-label="Theme change"  >Theme 1</button>
     <button id="theme2" type="button" class="btn btn-secondary theme-selector" data-theme="theme2"
-            aria-label="Theme change" role="button" >Theme 2</button>
-    <input type="text" id="article-search" placeholder="Search in article" role="search"
+            aria-label="Theme change"  >Theme 2</button>
+    <input type="text" id="article-search" placeholder="Search in article"
            aria-label="Search for specified word in the article">
   </div>
 
 
   <div class="container">
 
-    <article id="article" role="article" >
-      <h1 id="title" role="heading" aria-level="1" >Lorem Ipsum</h1>
+    <article id="article" >
+      <h1 id="title" >Lorem Ipsum</h1>
 
       <h2 id="subsipsum1" >Lorem subIpsum 1</h2>
       <p>
@@ -164,7 +164,7 @@
       <div class="text-image-box" role="figure">
         <div>
           <img class="text-image" src="https://picsum.photos/300/300"
-               alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit" loading="lazy" role="img">
+               alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit" loading="lazy">
         </div>
         <span class="text">
           Image name
@@ -236,7 +236,7 @@
 
       <div class="image-box" role="figure">
         <img class="text-image" src="https://picsum.photos/2000/400"
-             alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit" loading="lazy" role="img">
+             alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit" loading="lazy">
       </div>
 
       <h2 id="subsipsum6" >Lorem subIpsum 6</h2>
@@ -335,14 +335,14 @@
                       placeholder="Kérem adja meg az üzenetet"></textarea>
           </div>
 
-          <button class="btn btn-primary w-50 p2 form-send" type="submit" role="button" aria-label="Form submission">
+          <button class="btn btn-primary w-50 p2 form-send" type="submit" aria-label="Form submission">
             Küldés</button>
         </form>
       </div>
   </div>
 
   <footer>
-    <a id="footerlink" href="#toplink" role="navigation" aria-label="Jump to the top of the page">Ugrás a lap tetejére</a>
+    <a id="footerlink" href="#toplink"  aria-label="Jump to the top of the page">Ugrás a lap tetejére</a>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
