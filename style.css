@@ -29,6 +29,7 @@
     --dark-mode-color: #000000;
     --dark-mode-color2: #eadfdf;
     --dark-mode-background: #000000;
+    --dark-mode-higlight2: #c7c7ff;
 
 }
 
@@ -62,6 +63,7 @@ body[data-theme="theme2"] {
 }
 
 #theme2 {
+    color: #000000;
     background: var(--theme2-btn-background);
 }
 
@@ -84,7 +86,6 @@ h2 {
 #article > p {
     line-height: 25px;
     padding: 0px 0px 25px 0px;
-    text-align: justify;
     margin-bottom: 20px;
     color: var(--text-color);
     font-style: var(--text-style);
@@ -353,4 +354,9 @@ nav.sublinks > a {
     body[data-theme="theme1"] h2{
         color: var(--text-light);
     }
+
+    .higlight-2 {
+        color: var(--dark-mode-higlight2);
+    }
+
 }

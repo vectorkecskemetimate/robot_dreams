@@ -20,35 +20,38 @@
 <body data-theme="theme1">
 
   <nav class="top">
-    <a id="toplink" href="#footerlink">Ugrás a lap aljára</a>
+    <a id="toplink" href="#footerlink" aria-label="Jump to the bottom of the page" role="button">Ugrás a lap aljára</a>
   </nav>
 
-  <div class="base-image">
+  <div class="base-image" role="figure">
     <img src="https://picsum.photos/2200/400" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-         loading="lazy">
+         loading="lazy" >
   </div>
   <nav class="sublinks">
-    <a href="#subsipsum1">Lorem subIpsum 1</a>
-    <a href="#subsipsum2">Lorem subIpsum 2</a>
-    <a href="#subsipsum3">Lorem subIpsum 3</a>
-    <a href="#subsipsum4">Lorem subIpsum 4</a>
-    <a href="#subsipsum5" target="_blank">Lorem subIpsum 5</a>
-    <a href="#subsipsum6" target="_blank">Lorem subIpsum 6</a>
+    <a href="#subsipsum1" aria-label="Jump to article paragraph 1" role="button" >Lorem subIpsum 1</a>
+    <a href="#subsipsum2" aria-label="Jump to article paragraph 2" role="button">Lorem subIpsum 2</a>
+    <a href="#subsipsum3" aria-label="Jump to article paragraph 3" role="button" >Lorem subIpsum 3</a>
+    <a href="#subsipsum4" aria-label="Jump to article paragraph 4" role="button">Lorem subIpsum 4</a>
+    <a href="#subsipsum5" aria-label="Jump to article paragraph 5" target="_blank" role="button">Lorem subIpsum 5</a>
+    <a href="#subsipsum6" aria-label="Jump to article paragraph 6" target="_blank" role="button">Lorem subIpsum 6</a>
   </nav>
 
   <div class="theme-selector-box">
-    <button id="theme1" type="button" class="btn btn-secondary theme-selector" data-theme="theme1">Theme 1</button>
-    <button id="theme2" type="button" class="btn btn-secondary theme-selector" data-theme="theme2">Theme 2</button>
-    <input type="text" id="article-search" placeholder="Search in article">
+    <button id="theme1" type="button" class="btn btn-secondary theme-selector" data-theme="theme1"
+            aria-label="Switching to theme 1"  >Theme 1</button>
+    <button id="theme2" type="button" class="btn btn-secondary theme-selector" data-theme="theme2"
+            aria-label="Switching to theme 2"  >Theme 2</button>
+    <input type="text" id="article-search" placeholder="Search in article"
+           aria-label="Search for specified word in the article">
   </div>
 
 
   <div class="container">
 
-    <article id="article">
-      <h1 id="title">Lorem Ipsum</h1>
+    <article id="article" >
+      <h1 id="title" >Lorem Ipsum</h1>
 
-      <h2 id="subsipsum1">Lorem subIpsum 1</h2>
+      <h2 id="subsipsum1" >Lorem subIpsum 1</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam lorem, <span class="higlight-1">mollis
         suscipit auctor sed, lobortis id orci.</span> Aenean eleifend congue mauris tincidunt fringilla.
@@ -87,7 +90,7 @@
         lacinia et pharetra eu, pellentesque eget velit.
        </p>
 
-      <h2 id="subsipsum2">Lorem subIpsum 2</h2>
+      <h2 id="subsipsum2" >Lorem subIpsum 2</h2>
       <p>
         Maecenas eget diam varius, sodales velit a, pretium magna. Vestibulum sapien erat, <span class="higlight-2">
         dictum non tempor non, fringilla vel enim.</span> Fusce ut nunc dapibus, congue diam eget, vulputate massa.
@@ -116,13 +119,13 @@
         Integer sagittis metus a metus feugiat, vel aliquet diam molestie.
        </p>
 
-      <div class="background-image">
+      <div class="background-image" role="figure">
         <span>
           Morbi venenatis at odio vitae tincidunt.
         </span>
       </div>
 
-      <h2 id="subsipsum3">Lorem subIpsum 3</h2>
+      <h2 id="subsipsum3" >Lorem subIpsum 3</h2>
       <p>
         Morbi venenatis at odio vitae tincidunt. Etiam sollicitudin sit amet leo quis molestie. <span class="higlight-3">
         Morbi eu mauris viverra, bibendum odio id, finibus erat. </span> Sed rhoncus lacinia porttitor. Duis eleifend libero erat,
@@ -158,7 +161,7 @@
         Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
       </p>
 
-      <div class="text-image-box">
+      <div class="text-image-box" role="figure">
         <div>
           <img class="text-image" src="https://picsum.photos/300/300"
                alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit" loading="lazy">
@@ -168,7 +171,7 @@
         </span>
       </div>
 
-      <h2 id="subsipsum4">Lorem subIpsum 4</h2>
+      <h2 id="subsipsum4" >Lorem subIpsum 4</h2>
       <p>
         Morbi rhoncus turpis a tortor pellentesque volutpat. In ac lorem porttitor ex laoreet consectetur eu non tellus.
         Nulla id aliquam risus. Vivamus eleifend at nisl vitae sagittis. Maecenas ut ligula id risus vehicula accumsan.
@@ -192,7 +195,7 @@
         <span class="higlight-2">id iaculis sem posuere. Maecenas suscipit enim mi, vel venenatis odio iaculis ac.</span>
       </p>
 
-      <h2 id="subsipsum5">Lorem subIpsum 5</h2>
+      <h2 id="subsipsum5" >Lorem subIpsum 5</h2>
       <p>
         Nulla et erat ipsum. Nam aliquam mauris ut lorem egestas tincidunt. Suspendisse ac mi tempor, dictum sapien sed,
         lacinia dui. Nullam ac erat libero. Ut a turpis eu dui auctor mollis. Fusce porta sodales neque sed pulvinar.
@@ -231,12 +234,12 @@
         Aliquam at lacinia mauris, non placerat ex. Nullam sagittis dignissim pretium.
        </p>
 
-      <div class="image-box">
+      <div class="image-box" role="figure">
         <img class="text-image" src="https://picsum.photos/2000/400"
-             alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit" loading="lazy">
+             alt="This is the long description of the image, in case it doesn't show up 2000 / 400" loading="lazy">
       </div>
 
-      <h2 id="subsipsum6">Lorem subIpsum 6</h2>
+      <h2 id="subsipsum6" >Lorem subIpsum 6</h2>
       <p>
         Aenean finibus nisl at scelerisque condimentum. Mauris id justo non justo porta porta.
         Ut vestibulum ultrices metus id pulvinar. Fusce porttitor neque ac scelerisque egestas. Etiam imperdiet libero
@@ -290,7 +293,7 @@
     <hr>
 
     <div id="author-data" class="d-none">
-      <p class="title">Author</p>
+      <h3 class="title">Author</h3>
       <p><b>Name:</b> <span id="author-name"></span></p>
       <p><b>Email:</b> <a href="#" id="author-email"></a></p>
       <p><b>Tel:</b> <span id="author-tel"></span></p>
@@ -332,13 +335,14 @@
                       placeholder="Kérem adja meg az üzenetet"></textarea>
           </div>
 
-          <button class="btn btn-primary w-50 p2 form-send" type="submit">Küldés</button>
+          <button class="btn btn-primary w-50 p2 form-send" type="submit" aria-label="Form submission">
+            Küldés</button>
         </form>
       </div>
   </div>
 
   <footer>
-    <a id="footerlink" href="#toplink">Ugrás a lap tetejére</a>
+    <a id="footerlink" href="#toplink"  aria-label="Jump to the top of the page" role="button">Ugrás a lap tetejére</a>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
